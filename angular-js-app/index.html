@@ -6,11 +6,735 @@
   <link rel="stylesheet" media="all" href="css/custom.css">
 </head>
 <body>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">AWJ Base Project</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Resource 1</a></li>
+            <li><a href="#">Resource 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <hr/>
 
   <div class="container">
     <div ng-controller="HomeController">
-      <h1>{{ helloWorld }}</h1>
+      <h1>Tema 4- AWJ</h1>
+      
     </div>
+  </div>
+
+  <hr/>
+
+  <!-- /resources1 -->
+  <div class="container">
+    <h1>Persoana</h1>
+    <h2>List all resources</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Nume</th>
+    
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Paul</td>
+   
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Paul</td>
+ 
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+     
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Edit Persoana</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">ID</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Attribute 1">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Nume</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Attribute 2">
+          </div>
+         
+          <button type="submit" class="btn btn-info">Save</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Add Persoana</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">ID</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Attribute 1">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Nume</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Attribute 2">
+          </div>
+          
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Show Persoana</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://lorempixel.com/200/200/technics/?id=1" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h1>1</h1>
+        <p>John</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+   <!-- Skittles -->
+  <div class="container">
+    <h1>Skittles</h1>
+    <h2>List all resources</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Culoare</th>
+        <th>Flavor</th>
+        <th>Gramaj</th>
+		<th>Cod_bare</th>
+		<th>Pret</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>1</td>
+         <td>Rosu</td>
+		 <td>Original</td>
+		 <td>25.5</td>
+		 <td>89001029</td>
+		 <td>25</td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+         <td>verde</td>
+		 <td>fruitfresh</td>
+		 <td>50</td>
+		 <td>184623765</td>
+		 <td>50</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+         <td>mov</td>
+		 <td>blueberry</td>
+		 <td>25</td>
+		 <td>6324263477</td>
+		 <td>25</td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Edit Skittles</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Culoare">Culoare</label>
+            <input type="text" class="form-control" id="Culoare" placeholder="Culoare">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Flavor</label>
+            <input type="text" class="form-control" id="Flavor" placeholder="Flavor">
+          </div>
+          <div class="form-group">
+            <label for="attribute4">Gramaj</label>
+            <input type="text" class="form-control" id="Gramaj" placeholder="Gramaj">
+          </div>
+		  <div class="form-group">
+            <label for="attribute4">Cod_bare</label>
+            <input type="text" class="form-control" id="Cod_bare" placeholder="Cod_bare">
+          </div>
+		  <div class="form-group">
+            <label for="attribute4">Pret</label>
+            <input type="text" class="form-control" id="Pret" placeholder="Pret">
+          </div>
+          <button type="submit" class="btn btn-info">Save</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Add Skittles</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Culoare">Culoare</label>
+            <input type="text" class="form-control" id="Culoare" placeholder="Culoare">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Flavor</label>
+            <input type="text" class="form-control" id="Flavor" placeholder="Flavor">
+          </div>
+          <div class="form-group">
+            <label for="attribute4">Gramaj</label>
+            <input type="text" class="form-control" id="Gramaj" placeholder="Gramaj">
+          </div>
+		  <div class="form-group">
+            <label for="attribute4">Cod_bare</label>
+            <input type="text" class="form-control" id="Cod_bare" placeholder="Cod_bare">
+          </div>
+		  <div class="form-group">
+            <label for="attribute4">Pret</label>
+            <input type="text" class="form-control" id="Pret" placeholder="Pret">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Show Skittles</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://lorempixel.com/200/200/technics/?id=1" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h1>1</h1>
+        <p>Rosu , Original , 25.5, 89001029, 25 </p>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+  
+   <!-- Cos cumparaturi -->
+  <div class="container">
+    <h1>Cos cumparaturi</h1>
+    <h2>List all resources</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Categorie</th>
+        <th>Produs</th>
+        <th>Cantitate</th>
+		<th>Pret_bucata</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>1</td>
+         <td>Dulciuri</td>
+		 <td>Ciocolata</td>
+		 <td>3</td>
+		 <td>20</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+         <td>Fainoase</td>
+		 <td>Paine</td>
+		 <td>1</td>
+		 <td>1.5</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+         <td>Cereale</td>
+		 <td>Grau</td>
+		 <td>4</td>
+		 <td>25</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Edit Cos cumparaturi</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Categorie">Categorie</label>
+            <input type="text" class="form-control" id="Categorie" placeholder="Categorie">
+          </div>
+          <div class="form-group">
+            <label for="Produs">Produs</label>
+            <input type="text" class="form-control" id="Produs" placeholder="Produs">
+          </div>
+          <div class="form-group">
+            <label for="Cantitate">Cantitate</label>
+            <input type="text" class="form-control" id="Cantitate" placeholder="Cantitate">
+          </div>
+		  <div class="form-group">
+            <label for="Pret_bucata">Pret_bucata</label>
+            <input type="text" class="form-control" id="Pret_bucata" placeholder="Pret_bucata">
+          </div>
+          <button type="submit" class="btn btn-info">Save</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Add Cos cumparaturi</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Categorie">Categorie</label>
+            <input type="text" class="form-control" id="Categorie" placeholder="Categorie">
+          </div>
+          <div class="form-group">
+            <label for="Produs">Produs</label>
+            <input type="text" class="form-control" id="Produs" placeholder="Produs">
+          </div>
+          <div class="form-group">
+            <label for="Cantitate">Cantitate</label>
+            <input type="text" class="form-control" id="Cantitate" placeholder="Cantitate">
+          </div>
+		  <div class="form-group">
+            <label for="Pret_bucata">Pret_bucata</label>
+            <input type="text" class="form-control" id="Pret_bucata" placeholder="Pret_bucata">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Show Cos cumparaturi</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://lorempixel.com/200/200/technics/?id=1" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h1>1</h1>
+        <p>Dulciuri , Ciocolata, 3, 20</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  
+   <!-- Biblioteca -->
+  <div class="container">
+    <h1>Biblioteca</h1>
+    <h2>List all resources</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Gen</th>
+        <th>Autor</th>
+        <th>Titlu</th>
+		<th>Volum</th>
+		<th>Editie</th>
+		<th>Cod</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Politist</td>
+        <td>Agatha Cristie</td>
+        <td>Cadavrul din bibloiteca</td>
+		<td>3</td>
+		<td>Humanic</td>
+		<td>83248726</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Fantastic</td>
+        <td>Garth Nix</td>
+        <td>Sabriell</td>
+		<td>1</td>
+		<td>RAO</td>
+		<td>72462787</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <<td>3</td>
+        <td>Actiune</td>
+        <td>Veronica Roth</td>
+        <td>Divergent</td>
+		<td>3</td>
+		<td>Leda</td>
+		<td>73246728</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Edit Biblioteca</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Gen">Gen</label>
+            <input type="text" class="form-control" id="Gen" placeholder="Gen">
+          </div>
+          <div class="form-group">
+            <label for="Autor">Autor</label>
+            <input type="text" class="form-control" id="Autor" placeholder="Autor">
+          </div>
+          <div class="form-group">
+            <label for="Titlu">Titlu</label>
+            <input type="text" class="form-control" id="Titlu" placeholder="Titlu">
+          </div>
+		  <div class="form-group">
+            <label for="Volum">Volum</label>
+            <input type="text" class="form-control" id="Volum" placeholder="Volum">
+          </div>
+		  <div class="form-group">
+            <label for="Editie">Editie</label>
+            <input type="text" class="form-control" id="Editie" placeholder="Editie">
+          </div>
+		  <div class="form-group">
+            <label for="Cod">Cod</label>
+            <input type="text" class="form-control" id="Cod" placeholder="Cod">
+          </div>
+          <button type="submit" class="btn btn-info">Save</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Add a resource1</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Gen">Gen</label>
+            <input type="text" class="form-control" id="Gen" placeholder="Gen">
+          </div>
+          <div class="form-group">
+            <label for="Autor">Autor</label>
+            <input type="text" class="form-control" id="Autor" placeholder="Autor">
+          </div>
+          <div class="form-group">
+            <label for="Titlu">Titlu</label>
+            <input type="text" class="form-control" id="Titlu" placeholder="Titlu">
+          </div>
+		  <div class="form-group">
+            <label for="Volum">Volum</label>
+            <input type="text" class="form-control" id="Volum" placeholder="Volum">
+          </div>
+		  <div class="form-group">
+            <label for="Editie">Editie</label>
+            <input type="text" class="form-control" id="Editie" placeholder="Editie">
+          </div>
+		  <div class="form-group">
+            <label for="Cod">Cod</label>
+            <input type="text" class="form-control" id="Cod" placeholder="Cod">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Show Biblioteca</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://lorempixel.com/200/200/technics/?id=1" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h1>1</h1>
+        <p>Politist,Agatha Christie, Cadavrul din biblioteca, 3, Humanic, 4736482</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+  
+  
+  <div class="container">
+    <footer class="footer">
+      <p class="text-muted pull-left">AWJ Base Project &copy; 2015-2016</p>
+      <p class="text-muted pull-right">Sirbu Nicolae-Cezar, 331AA</p>
+    </footer>
   </div>
 
   <script src="js/jquery-1.11.3.min.js"></script>
