@@ -1,3 +1,4 @@
+
 package hello;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -31,19 +33,20 @@ public class BibliotecaController {
     return this.Biblioteca;
   }
 
-@RequestMapping(value="/Biblioteca/{gen}/{autor}/{titlu}/{volum}/{editie}/{cod}", method = RequestMethod.POST)
-  public List<Biblioteca> adauga(@PathVariable("gen") String gen , @PathVariable("autor") String autor ,@PathVariable("titlu") String titlu, @PathVariable("volum") int volum , @PathVariable("editie") String editie , @PathVariable("cod") long cod )
-  {
+@RequestMapping(value="/Biblioteca/{gen}/{autor}/{titlu}/{volum}/{editie}/{cod}}", method = RequestMethod.POST)
+  public List<Biblioteca> adauga(@PathVariable("gen") String gen,@PathVariable("autor")  String autor,@PathVariable("titlu") String titlu,  @PathVariable("volum") int volum, @PathVariable("editie") String editie ,@PathVariable("cod") long cod) {
 	int aux=1;
-	for(Biblioteca b : this.Biblioteca) 
+	for(Biblioteca p : this.Biblioteca) 
 	{
 		aux++;
 	}
-	Biblioteca b = new Biblioteca(aux, gen, autor, titlu, volum, editie, cod);
-	Biblioteca.add(b);
+	Biblioteca p = new Biblioteca(aux, gen , autor, titlu , volum, editie, cod);
+	Biblioteca.add(p);
 	
     return this.Biblioteca;
   } 
+
+
   @RequestMapping(value="/Biblioteca/{id}", method = RequestMethod.GET)
   public ResponseEntity show(@PathVariable("id") int id) {
     for(Biblioteca b : this.Biblioteca) {
